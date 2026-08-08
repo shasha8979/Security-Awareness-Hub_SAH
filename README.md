@@ -1,7 +1,7 @@
 # Security Awareness Hub
 
 <p align="center">
-  <img src="frontend/assets/Page_Readme.png" alt="Security Awareness Hub" width="300">
+  <img src="frontend/assets/Page_Readme.png" alt="Security Awareness Hub" width="1000">
 </p>
 
 <p align="center">
