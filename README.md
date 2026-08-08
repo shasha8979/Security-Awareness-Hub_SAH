@@ -1,1 +1,1 @@
-# Security-Awareness-Hub---SAH
+# Security-Awareness-Hub
