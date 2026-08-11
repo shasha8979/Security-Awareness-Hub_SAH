@@ -1,0 +1,779 @@
+:root {
+    --color-background: #0b0d0c;
+    --color-surface: #121614;
+    --color-primary: #4ade80;
+    --color-primary-dark: #1f5d38;
+    --color-white: #f5f7f5;
+    --color-gray: #8b938d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-white);
+    font-family: Arial, sans-serif;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar-wrapper {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.navbar-custom {
+    min-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px 18px;
+
+    background: rgba(10, 12, 11, 0.85);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-logo {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--color-white);
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+.navbar-logo span:last-child {
+    color: var(--color-primary);
+}
+
+
+/* =========================================
+   MENÚ
+========================================= */
+
+.navbar-menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.navbar-menu a {
+
+    color: var(--color-gray);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+.navbar-menu a:hover {
+
+    color: var(--color-white);
+}
+
+
+/* =========================================
+   BOTÓN LOGIN
+========================================= */
+
+.navbar-button {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 18px;
+
+    border-radius: 10px;
+
+    background-color: var(--color-primary);
+
+    color: #071009;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.navbar-button:hover {
+
+    transform: translateY(-2px);
+
+    background-color: #6ee7a0;
+}
+
+/* =========================================
+   SECCIÓN TEMPORAL
+========================================= */
+
+.test-section {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 120px 20px 60px;
+}
+
+
+.test-section h1 {
+
+    font-size: clamp(40px, 6vw, 80px);
+
+    font-weight: 700;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 20px;
+}
+
+
+.test-section p {
+
+    color: var(--color-primary);
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding-top: 120px;
+}
+
+
+.hero-row {
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 620px;
+}
+
+
+.hero-label {
+
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    color: var(--color-primary);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.hero-title {
+
+    font-size: clamp(48px, 6vw, 88px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    font-weight: 700;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-title span {
+
+    display: block;
+
+    color: var(--color-primary);
+}
+
+
+.hero-description {
+
+    max-width: 500px;
+
+    color: var(--color-gray);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.hero-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.hero-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 14px 24px;
+
+    border-radius: 12px;
+
+    background-color: var(--color-primary);
+
+    color: #071009;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+
+.hero-button:hover {
+
+    transform: translateY(-3px);
+
+    background-color: #6ee7a0;
+
+    color: #071009;
+}
+
+
+.hero-link {
+
+    color: var(--color-white);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+.hero-link:hover {
+
+    color: var(--color-primary);
+}
+
+/* =========================================
+   HERO VISUAL
+========================================= */
+
+.hero-visual {
+
+    position: relative;
+
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.hero-glow {
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    background: var(--color-primary);
+
+    opacity: 0.08;
+
+    filter: blur(100px);
+}
+
+
+/* =========================================
+   HERO CARD
+========================================= */
+
+.hero-card {
+
+    position: relative;
+
+    width: 420px;
+
+    height: 520px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(40, 50, 45, 0.9),
+            rgba(10, 14, 12, 0.98)
+        );
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    box-shadow:
+        0 40px 100px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================
+   HERO CARD HEADER
+========================================= */
+
+.hero-card-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: var(--color-gray);
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+.status-dot {
+
+    width: 7px;
+
+    height: 7px;
+
+    border-radius: 50%;
+
+    background-color: var(--color-primary);
+
+    box-shadow:
+        0 0 10px var(--color-primary);
+}
+
+/* =========================================
+   HERO CARD CONTENT
+========================================= */
+
+.hero-card-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.hero-card-number {
+
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: var(--color-primary);
+
+    font-size: 14px;
+
+    letter-spacing: 2px;
+}
+
+
+.hero-card-content h2 {
+
+    font-size: 55px;
+
+    line-height: 0.9;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-card-content p {
+
+    max-width: 250px;
+
+    color: var(--color-gray);
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+/* =========================================
+   HERO CARD FOOTER
+========================================= */
+
+.hero-card-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    color: var(--color-gray);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+.hero-card-footer span:last-child {
+
+    color: var(--color-primary);
+}
+
+/* =========================================
+   SECURITY RISKS
+========================================= */
+
+.security-risks {
+
+    position: relative;
+
+    padding: 150px 0;
+
+    background-color: var(--color-background);
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+
+    max-width: 850px;
+
+    margin-bottom: 70px;
+}
+
+
+.section-label {
+
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    color: var(--color-primary);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.section-heading h2 {
+
+    font-size: clamp(45px, 6vw, 78px);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+
+.section-heading h2 span {
+
+    color: var(--color-primary);
+}
+
+
+.section-heading p {
+
+    max-width: 650px;
+
+    color: var(--color-gray);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+/* =========================================
+   SECURITY CARDS
+========================================= */
+
+.security-cards {
+
+    margin-top: 30px;
+}
+
+
+.security-card {
+
+    position: relative;
+
+    min-height: 420px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border-radius: 24px;
+
+    background-color: var(--color-surface);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        background-color 0.4s ease;
+}
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.security-card-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+
+.security-number {
+
+    color: var(--color-primary);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+.security-status {
+
+    color: var(--color-gray);
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    padding: 6px 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 50px;
+}
+
+/* =========================================
+   CARD ICON
+========================================= */
+
+.security-card-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+    background-color: rgba(74, 222, 128, 0.08);
+
+    border: 1px solid rgba(74, 222, 128, 0.15);
+
+    color: var(--color-primary);
+
+    font-size: 22px;
+}
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.security-card h3 {
+
+    margin-bottom: 15px;
+
+    font-size: 30px;
+
+    letter-spacing: -1px;
+}
+
+
+.security-card p {
+
+    margin-bottom: 30px;
+
+    color: var(--color-gray);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+/* =========================================
+   CARD LINK
+========================================= */
+
+.security-card-link {
+
+    margin-top: auto;
+
+    color: var(--color-white);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: color 0.3s ease;
+}
+
+
+.security-card-link:hover {
+
+    color: var(--color-primary);
+}
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.security-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(74, 222, 128, 0.3);
+
+    background-color: #151a17;
+}
+
+
+.security-card:hover .security-card-icon {
+
+    background-color: rgba(74, 222, 128, 0.15);
+}
