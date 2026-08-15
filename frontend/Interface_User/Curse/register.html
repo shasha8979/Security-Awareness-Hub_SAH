@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crear cuenta | Security Awareness</title>
+
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+    <!-- FONDO -->
+    <div class="background"></div>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="register-container">
+
+        <section class="register-card">
+
+            <!-- LOGO -->
+            <div class="logo">
+                <span>SECURITY</span>
+                <strong>AWARENESS</strong>
+            </div>
+
+            <!-- TITULO -->
+            <div class="register-header">
+
+                <p class="tag">SECURITY AWARENESS</p>
+
+                <h1>
+                    Crear una
+                    <span>cuenta</span>
+                </h1>
+
+                <p>
+                    Regístrate para comenzar tu capacitación
+                    en seguridad digital.
+                </p>
+
+            </div>
+
+            <!-- FORMULARIO -->
+            <form id="registerForm">
+
+                <!-- NOMBRE -->
+                <div class="input-group">
+
+                    <label for="name">
+                        Nombre completo
+                    </label>
+
+                    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre completo" required>
+
+                </div>
+
+                <!-- CORREO -->
+                <div class="input-group">
+
+                    <label for="email">
+                        Correo electrónico
+                    </label>
+
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+                </div>
+
+                <!-- CONTRASEÑA -->
+                <div class="input-group">
+
+                    <label for="password">
+                        Contraseña
+                    </label>
+
+                    <input type="password" id="password" name="password" placeholder="Crea una contraseña" minlength="6"
+                        required>
+
+                </div>
+
+                <!-- CONFIRMAR CONTRASEÑA -->
+                <div class="input-group">
+
+                    <label for="confirmPassword">
+                        Confirmar contraseña
+                    </label>
+
+                    <input type="password" id="confirmPassword" name="confirmPassword"
+                        placeholder="Repite tu contraseña" minlength="6" required>
+
+                </div>
+
+                <!-- TIPO DE USUARIO -->
+                <div class="input-group">
+
+                    <label for="role">
+                        Tipo de usuario
+                    </label>
+
+                    <select id="role" name="role" required>
+
+                        <option value="">
+                            Selecciona una opción
+                        </option>
+
+                        <option value="empleado">
+                            Empleado
+                        </option>
+
+
+
+                    </select>
+
+                </div>
+
+                <!-- MENSAJE -->
+                <div id="message"></div>
+
+                <!-- BOTÓN -->
+                <button type="submit" class="register-button">
+                    Crear cuenta
+                </button>
+
+            </form>
+
+            <!-- LOGIN -->
+            <div class="login-link">
+
+                <span>
+                    ¿Ya tienes una cuenta?
+                </span>
+
+                <a href="login.html">
+                    Iniciar sesión
+                </a>
+
+            </div>
+
+            <!-- REGRESAR -->
+            <a href="../../Landing_Page/index.html" class="back-link">
+                ← Volver al inicio
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>
