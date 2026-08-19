@@ -209,19 +209,21 @@ if (loginForm) {
         );
 
 
-        /* ---------------------------------------------
-           REDIRECCIÓN
-           
-           login.html está dentro de:
-           
-           Interface_User/Curse/
-           
-           y curse.html está en la misma carpeta.
-           --------------------------------------------- */
+/* ---------------------------------------------
+   REDIRECCIÓN
+
+   login.html está dentro de:
+
+   authentication/
+
+   y course.html está dentro de:
+
+   Interface_User/Course/
+   --------------------------------------------- */
 
         setTimeout(() => {
 
-            window.location.href = "curse.html";
+            window.location.href = "../Interface_User/Course/course.html";
 
         }, 1000);
 
