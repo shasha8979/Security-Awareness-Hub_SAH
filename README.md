@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="frontend/assets/Page_Readme.png" alt="Security Awareness Hub" width="1000">
+  <img src="frontend/Landing_Page/assets/imagenes/Page_Readme.png" alt="Security Awareness Hub" width="1000">
 </p>
 
 ## 📌 Descripción

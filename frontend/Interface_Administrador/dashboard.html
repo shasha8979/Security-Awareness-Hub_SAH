@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Dashboard | Security Awareness Hub
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/admin.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         ADMINISTRATOR LAYOUT
+    ====================================================== -->
+
+    <div class="admin-layout">
+
+
+        <!-- =================================================
+             SIDEBAR
+        ================================================== -->
+
+        <aside class="admin-sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="admin-logo">
+
+                <div class="logo-symbol">
+                    SAH
+                </div>
+
+                <div class="logo-name">
+
+                    <span>
+                        SECURITY
+                    </span>
+
+                    <span>
+                        AWARENESS HUB
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 NAVIGATION
+            ================================================== -->
+
+            <nav class="admin-navigation">
+
+
+                <!-- PRINCIPAL -->
+
+                <div class="nav-group">
+
+                    <span class="nav-title">
+                        PRINCIPAL
+                    </span>
+
+
+                    <a
+                        href="#"
+                        class="nav-item active"
+                        data-view="dashboard"
+                    >
+
+                        <span class="nav-icon">
+                            ◈
+                        </span>
+
+                        <span>
+                            Dashboard
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- GESTIÓN -->
+
+                <div class="nav-group">
+
+                    <span class="nav-title">
+                        GESTIÓN
+                    </span>
+
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-view="usuarios"
+                    >
+
+                        <span class="nav-icon">
+                            ◉
+                        </span>
+
+                        <span>
+                            Usuarios
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                        data-view="empresas"
+                    >
+
+                        <span class="nav-icon">
+                            ◇
+                        </span>
+
+                        <span>
+                            Empresas
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- CAPACITACIÓN -->
+
+                <div class="nav-group">
+
+                    <span class="nav-title">
+                        CAPACITACIÓN
+                    </span>
+
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                    >
+
+                        <span class="nav-icon">
+                            ▣
+                        </span>
+
+                        <span>
+                            Cursos
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                    >
+
+                        <span class="nav-icon">
+                            ⇄
+                        </span>
+
+                        <span>
+                            Asignaciones
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- EVALUACIONES -->
+
+                <div class="nav-group">
+
+                    <span class="nav-title">
+                        EVALUACIONES
+                    </span>
+
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                    >
+
+                        <span class="nav-icon">
+                            ✓
+                        </span>
+
+                        <span>
+                            Evaluaciones
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                    >
+
+                        <span class="nav-icon">
+                            ≋
+                        </span>
+
+                        <span>
+                            Resultados
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- ANALÍTICA -->
+
+                <div class="nav-group">
+
+                    <span class="nav-title">
+                        ANALÍTICA
+                    </span>
+
+
+                    <a
+                        href="#"
+                        class="nav-item"
+                    >
+
+                        <span class="nav-icon">
+                            ◫
+                        </span>
+
+                        <span>
+                            Reportes
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </nav>
+
+
+            <!-- =================================================
+                 SIDEBAR FOOTER
+            ================================================== -->
+
+            <div class="admin-sidebar-footer">
+
+
+                <a
+                    href="#"
+                    class="nav-item"
+                >
+
+                    <span class="nav-icon">
+                        ⚙
+                    </span>
+
+                    <span>
+                        Configuración
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="#"
+                    class="nav-item logout"
+                >
+
+                    <span class="nav-icon">
+                        ↪
+                    </span>
+
+                    <span>
+                        Cerrar sesión
+                    </span>
+
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             MAIN
+        ================================================== -->
+
+        <main class="admin-main">
+
+
+            <!-- =================================================
+                 TOPBAR
+            ================================================== -->
+
+            <header class="admin-topbar">
+
+
+                <div class="topbar-left">
+
+                    <div class="breadcrumb">
+
+                        <span>
+                            SECURITY AWARENESS HUB
+                        </span>
+
+                        <i>
+                            /
+                        </i>
+
+                        <strong id="page-title">
+                            Dashboard
+                        </strong>
+
+                    </div>
+
+
+                    <h1>
+                        Panel de administración
+                    </h1>
+
+                </div>
+
+
+                <div class="topbar-right">
+
+
+                    <!-- NOTIFICACIONES -->
+
+                    <button
+                        class="notification-button"
+                        aria-label="Notificaciones"
+                    >
+
+                        <span class="notification-icon">
+                            ◌
+                        </span>
+
+                        <span class="notification-dot">
+                        </span>
+
+                    </button>
+
+
+                    <!-- PERFIL -->
+
+                    <div class="admin-profile">
+
+
+                        <div class="profile-avatar">
+                            AD
+                        </div>
+
+
+                        <div class="profile-info">
+
+                            <strong>
+                                Administrador
+                            </strong>
+
+                            <span>
+                                Administrador del sistema
+                            </span>
+
+                        </div>
+
+
+                        <span class="profile-arrow">
+                            ▾
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =================================================
+                 DYNAMIC CONTENT
+            ================================================== -->
+
+            <section
+                class="dashboard-content"
+                id="admin-content"
+            >
+
+
+                <!-- =================================================
+                     DASHBOARD HEADER
+                ================================================== -->
+
+                <div class="dashboard-heading">
+
+
+                    <div class="heading-content">
+
+                        <span class="section-label">
+                            PANEL DE CONTROL
+                        </span>
+
+
+                        <h2>
+                            Bienvenido de nuevo,
+                            <span>
+                                Administrador
+                            </span>
+                        </h2>
+
+
+                        <p>
+                            Gestiona la seguridad, capacitación
+                            y actividad de los usuarios de tu
+                            organización desde un solo lugar.
+                        </p>
+
+                    </div>
+
+
+                    <div class="heading-date">
+
+                        <span>
+                            HOY
+                        </span>
+
+                        <strong>
+                            17 AGO 2026
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     STATISTICS
+                ================================================== -->
+
+                <div class="stats-grid">
+
+
+                    <!-- USUARIOS -->
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+
+                            <span class="stat-label">
+                                USUARIOS
+                            </span>
+
+                            <div class="stat-icon">
+                                ◉
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat-main">
+
+                            <strong class="stat-value">
+                                128
+                            </strong>
+
+                            <span class="stat-change positive">
+                                +12.5%
+                            </span>
+
+                        </div>
+
+
+                        <span class="stat-description">
+                            frente al mes anterior
+                        </span>
+
+                    </article>
+
+
+
+                    <!-- EMPRESAS -->
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+
+                            <span class="stat-label">
+                                EMPRESAS
+                            </span>
+
+                            <div class="stat-icon">
+                                ◇
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat-main">
+
+                            <strong class="stat-value">
+                                8
+                            </strong>
+
+                            <span class="stat-change positive">
+                                +2
+                            </span>
+
+                        </div>
+
+
+                        <span class="stat-description">
+                            empresas registradas
+                        </span>
+
+                    </article>
+
+
+
+                    <!-- CURSOS -->
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+
+                            <span class="stat-label">
+                                CURSOS
+                            </span>
+
+                            <div class="stat-icon">
+                                ▣
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat-main">
+
+                            <strong class="stat-value">
+                                12
+                            </strong>
+
+                            <span class="stat-change positive">
+                                +3
+                            </span>
+
+                        </div>
+
+
+                        <span class="stat-description">
+                            cursos publicados
+                        </span>
+
+                    </article>
+
+
+
+                    <!-- PROGRESO -->
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+
+                            <span class="stat-label">
+                                PROGRESO
+                            </span>
+
+                            <div class="stat-icon">
+                                ↗
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat-main">
+
+                            <strong class="stat-value">
+                                86%
+                            </strong>
+
+                            <span class="stat-change positive">
+                                +8.4%
+                            </span>
+
+                        </div>
+
+
+                        <span class="stat-description">
+                            tasa de finalización
+                        </span>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     MAIN DASHBOARD GRID
+                ================================================== -->
+
+                <div class="dashboard-grid">
+
+
+                    <!-- =================================================
+                         ACTIVITY
+                    ================================================== -->
+
+                    <section class="dashboard-card activity-card">
+
+
+                        <div class="card-header">
+
+
+                            <div>
+
+                                <span class="section-label">
+                                    ACTIVIDAD
+                                </span>
+
+                                <h3>
+                                    Actividad de capacitación
+                                </h3>
+
+                            </div>
+
+
+                            <select class="period-select">
+
+                                <option>
+                                    Últimos 30 días
+                                </option>
+
+                                <option>
+                                    Últimos 7 días
+                                </option>
+
+                                <option>
+                                    Este año
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- GRAPH -->
+
+                        <div class="activity-chart">
+
+
+                            <div class="chart-y-axis">
+
+                                <span>
+                                    100
+                                </span>
+
+                                <span>
+                                    75
+                                </span>
+
+                                <span>
+                                    50
+                                </span>
+
+                                <span>
+                                    25
+                                </span>
+
+                                <span>
+                                    0
+                                </span>
+
+                            </div>
+
+
+                            <div class="chart-area">
+
+
+                                <div class="chart-grid-line"></div>
+
+                                <div class="chart-grid-line"></div>
+
+                                <div class="chart-grid-line"></div>
+
+                                <div class="chart-grid-line"></div>
+
+                                <div class="chart-grid-line"></div>
+
+
+                                <div class="chart-bars">
+
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 42%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 58%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 48%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 73%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 64%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 81%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 70%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 91%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 78%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 88%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 95%"
+                                    ></div>
+
+                                    <div
+                                        class="chart-bar"
+                                        style="height: 84%"
+                                    ></div>
+
+                                </div>
+
+
+                                <div class="chart-months">
+
+                                    <span>
+                                        MAY
+                                    </span>
+
+                                    <span>
+                                        JUN
+                                    </span>
+
+                                    <span>
+                                        JUL
+                                    </span>
+
+                                    <span>
+                                        AGO
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- CHART LEGEND -->
+
+                        <div class="chart-footer">
+
+
+                            <div class="chart-stat">
+
+                                <span class="legend-dot">
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        1,284
+                                    </strong>
+
+                                    <span>
+                                        Actividades completadas
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="chart-stat">
+
+                                <span class="legend-dot secondary">
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        86%
+                                    </strong>
+
+                                    <span>
+                                        Tasa de finalización
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         RECENT COURSES
+                    ================================================== -->
+
+                    <section class="dashboard-card courses-card">
+
+
+                        <div class="card-header">
+
+
+                            <div>
+
+                                <span class="section-label">
+                                    CAPACITACIÓN
+                                </span>
+
+                                <h3>
+                                    Cursos recientes
+                                </h3>
+
+                            </div>
+
+
+                            <a
+                                href="#"
+                                class="view-all"
+                            >
+                                Ver todos
+                            </a>
+
+                        </div>
+
+
+                        <div class="course-list">
+
+
+                            <!-- COURSE 1 -->
+
+                            <article class="course-item">
+
+
+                                <div class="course-number">
+                                    01
+                                </div>
+
+
+                                <div class="course-info">
+
+                                    <strong>
+                                        Fundamentos de
+                                        Ciberseguridad
+                                    </strong>
+
+                                    <span>
+                                        128 usuarios asignados
+                                    </span>
+
+                                </div>
+
+
+                                <div class="course-progress">
+
+                                    <span>
+                                        82%
+                                    </span>
+
+                                    <div>
+                                        <span
+                                            style="width:82%"
+                                        ></span>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- COURSE 2 -->
+
+                            <article class="course-item">
+
+
+                                <div class="course-number">
+                                    02
+                                </div>
+
+
+                                <div class="course-info">
+
+                                    <strong>
+                                        Phishing y correos
+                                        fraudulentos
+                                    </strong>
+
+                                    <span>
+                                        96 usuarios asignados
+                                    </span>
+
+                                </div>
+
+
+                                <div class="course-progress">
+
+                                    <span>
+                                        74%
+                                    </span>
+
+                                    <div>
+                                        <span
+                                            style="width:74%"
+                                        ></span>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- COURSE 3 -->
+
+                            <article class="course-item">
+
+
+                                <div class="course-number">
+                                    03
+                                </div>
+
+
+                                <div class="course-info">
+
+                                    <strong>
+                                        Contraseñas seguras
+                                    </strong>
+
+                                    <span>
+                                        84 usuarios asignados
+                                    </span>
+
+                                </div>
+
+
+                                <div class="course-progress">
+
+                                    <span>
+                                        68%
+                                    </span>
+
+                                    <div>
+                                        <span
+                                            style="width:68%"
+                                        ></span>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- COURSE 4 -->
+
+                            <article class="course-item">
+
+
+                                <div class="course-number">
+                                    04
+                                </div>
+
+
+                                <div class="course-info">
+
+                                    <strong>
+                                        Ingeniería social
+                                    </strong>
+
+                                    <span>
+                                        71 usuarios asignados
+                                    </span>
+
+                                </div>
+
+
+                                <div class="course-progress">
+
+                                    <span>
+                                        61%
+                                    </span>
+
+                                    <div>
+                                        <span
+                                            style="width:61%"
+                                        ></span>
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     BOTTOM SECTION
+                ================================================== -->
+
+                <div class="bottom-grid">
+
+
+                    <!-- QUICK ACTIONS -->
+
+                    <section class="dashboard-card quick-actions-card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="section-label">
+                                    ACCIONES
+                                </span>
+
+                                <h3>
+                                    Accesos rápidos
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+
+                            <a
+                                href="#"
+                                class="quick-action"
+                            >
+
+                                <span class="quick-icon">
+                                    +
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Nuevo usuario
+                                    </strong>
+
+                                    <span>
+                                        Registrar un usuario
+                                    </span>
+
+                                </div>
+
+                                <b>
+                                    →
+                                </b>
+
+                            </a>
+
+
+                            <a
+                                href="#"
+                                class="quick-action"
+                            >
+
+                                <span class="quick-icon">
+                                    +
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Nueva empresa
+                                    </strong>
+
+                                    <span>
+                                        Registrar organización
+                                    </span>
+
+                                </div>
+
+                                <b>
+                                    →
+                                </b>
+
+                            </a>
+
+
+                            <a
+                                href="#"
+                                class="quick-action"
+                            >
+
+                                <span class="quick-icon">
+                                    +
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Crear curso
+                                    </strong>
+
+                                    <span>
+                                        Añadir capacitación
+                                    </span>
+
+                                </div>
+
+                                <b>
+                                    →
+                                </b>
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- SYSTEM STATUS -->
+
+                    <section class="dashboard-card system-card">
+
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <span class="section-label">
+                                    SISTEMA
+                                </span>
+
+                                <h3>
+                                    Estado de la plataforma
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="system-status">
+
+
+                            <div class="system-row">
+
+                                <div class="system-name">
+
+                                    <span class="status-indicator online">
+                                    </span>
+
+                                    <span>
+                                        Plataforma
+                                    </span>
+
+                                </div>
+
+                                <strong>
+                                    Operativa
+                                </strong>
+
+                            </div>
+
+
+                            <div class="system-row">
+
+                                <div class="system-name">
+
+                                    <span class="status-indicator online">
+                                    </span>
+
+                                    <span>
+                                        Base de datos
+                                    </span>
+
+                                </div>
+
+                                <strong>
+                                    Operativa
+                                </strong>
+
+                            </div>
+
+
+                            <div class="system-row">
+
+                                <div class="system-name">
+
+                                    <span class="status-indicator online">
+                                    </span>
+
+                                    <span>
+                                        Servicios
+                                    </span>
+
+                                </div>
+
+                                <strong>
+                                    Operativos
+                                </strong>
+
+                            </div>
+
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            () => {
+
+
+                const content =
+                    document.getElementById(
+                        "admin-content"
+                    );
+
+
+                const pageTitle =
+                    document.getElementById(
+                        "page-title"
+                    );
+
+
+                const navItems =
+                    document.querySelectorAll(
+                        ".nav-item[data-view]"
+                    );
+
+
+                /*
+                 * Guardamos el dashboard original.
+                 */
+
+                const dashboardContent =
+                    content.innerHTML;
+
+
+                /*
+                 * Títulos.
+                 */
+
+                const sectionTitles = {
+
+                    dashboard:
+                        "Dashboard",
+
+                    usuarios:
+                        "Usuarios",
+
+                    empresas:
+                        "Empresas"
+
+                };
+
+
+                /*
+                 * Cargar sección.
+                 */
+
+                async function loadSection(
+                    view,
+                    selectedItem
+                ) {
+
+
+                    /*
+                     * Regresar al dashboard.
+                     */
+
+                    if (view === "dashboard") {
+
+                        content.innerHTML =
+                            dashboardContent;
+
+                        pageTitle.textContent =
+                            sectionTitles.dashboard;
+
+                        setActive(
+                            selectedItem
+                        );
+
+                        return;
+
+                    }
+
+
+                    try {
+
+
+                        const response =
+                            await fetch(
+                                `${view}.html`
+                            );
+
+
+                        if (!response.ok) {
+
+                            throw new Error(
+                                `No se pudo cargar ${view}.html`
+                            );
+
+                        }
+
+
+                        const html =
+                            await response.text();
+
+
+                        content.innerHTML =
+                            html;
+
+
+                        pageTitle.textContent =
+                            sectionTitles[view]
+                            || view;
+
+
+                        setActive(
+                            selectedItem
+                        );
+
+
+                    } catch (error) {
+
+
+                        console.error(error);
+
+
+                        content.innerHTML = `
+
+                            <div class="error-panel">
+
+                                <span>
+                                    ERROR
+                                </span>
+
+                                <h2>
+                                    No se pudo cargar
+                                    la sección
+                                </h2>
+
+                                <p>
+                                    No fue posible cargar
+                                    ${view}.html.
+                                </p>
+
+                            </div>
+
+                        `;
+
+                    }
+
+                }
+
+
+                /*
+                 * Active navigation.
+                 */
+
+                function setActive(item) {
+
+                    navItems.forEach(
+                        nav => {
+
+                            nav.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+
+                    if (item) {
+
+                        item.classList.add(
+                            "active"
+                        );
+
+                    }
+
+                }
+
+
+                /*
+                 * Navigation events.
+                 */
+
+                navItems.forEach(
+                    item => {
+
+                        item.addEventListener(
+                            "click",
+                            event => {
+
+                                event.preventDefault();
+
+
+                                const view =
+                                    item.dataset.view;
+
+
+                                if (!view) {
+                                    return;
+                                }
+
+
+                                loadSection(
+                                    view,
+                                    item
+                                );
+
+                            }
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,535 @@
+<!-- =====================================================
+     USUARIOS
+====================================================== -->
+
+<section class="users-panel">
+
+
+    <!-- =================================================
+         ENCABEZADO
+    ================================================== -->
+
+    <div class="dashboard-heading">
+
+
+        <div>
+
+            <span class="section-label">
+                GESTIÓN DE USUARIOS
+            </span>
+
+            <h2>
+                Usuarios
+            </h2>
+
+            <p>
+                Administra los usuarios y consulta
+                su progreso dentro de la plataforma.
+            </p>
+
+        </div>
+
+
+        <button class="admin-button">
+            + Nuevo usuario
+        </button>
+
+    </div>
+
+
+    <!-- =================================================
+         FILTROS
+    ================================================== -->
+
+    <div class="users-toolbar">
+
+
+        <!-- BUSCADOR -->
+
+        <div class="search-box">
+
+            <span class="search-icon">
+                ⌕
+            </span>
+
+            <input
+                type="search"
+                placeholder="Buscar por nombre o correo..."
+            >
+
+        </div>
+
+
+        <!-- ESTADO -->
+
+        <select class="users-filter">
+
+            <option>
+                Todos los estados
+            </option>
+
+            <option>
+                Activos
+            </option>
+
+            <option>
+                Inactivos
+            </option>
+
+        </select>
+
+
+        <!-- EMPRESA -->
+
+        <select class="users-filter">
+
+            <option>
+                Todas las empresas
+            </option>
+
+            <option>
+                Security Analytics
+            </option>
+
+            <option>
+                TechCorp
+            </option>
+
+            <option>
+                Innovate Solutions
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- =================================================
+         DIRECTORIO
+    ================================================== -->
+
+    <div class="dashboard-card users-table-card">
+
+
+        <!-- HEADER -->
+
+        <div class="card-header">
+
+
+            <div>
+
+                <span class="section-label">
+                    DIRECTORIO
+                </span>
+
+                <h3>
+                    Usuarios registrados
+                </h3>
+
+            </div>
+
+
+            <span class="card-period">
+                6 usuarios
+            </span>
+
+        </div>
+
+
+        <!-- TABLA -->
+
+        <div class="table-wrapper">
+
+            <table class="users-table">
+
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            USUARIO
+                        </th>
+
+                        <th>
+                            EMPRESA
+                        </th>
+
+                        <th>
+                            ROL
+                        </th>
+
+                        <th>
+                            PROGRESO
+                        </th>
+
+                        <th>
+                            ESTADO
+                        </th>
+
+                        <th>
+                            ÚLTIMO ACCESO
+                        </th>
+
+                        <th>
+                            ACCIONES
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <!-- USUARIO 1 -->
+
+                    <tr>
+
+                        <td>
+
+                            <strong>
+                                Carlos Rodríguez
+                            </strong>
+
+                            <span class="table-secondary">
+                                carlos@securityanalytics.com
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Security Analytics
+                        </td>
+
+
+                        <td>
+                            Empleado
+                        </td>
+
+
+                        <td>
+
+                            <div class="progress-container">
+
+                                <div class="progress-bar">
+
+                                    <span
+                                        style="width: 82%"
+                                    ></span>
+
+                                </div>
+
+                                <span>
+                                    82%
+                                </span>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="status-badge active">
+                                Activo
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Hoy, 10:42 AM
+                        </td>
+
+
+                        <td>
+
+                            <button class="table-action">
+                                Ver
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- USUARIO 2 -->
+
+                    <tr>
+
+                        <td>
+
+                            <strong>
+                                Laura Martínez
+                            </strong>
+
+                            <span class="table-secondary">
+                                laura@techcorp.com
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            TechCorp
+                        </td>
+
+
+                        <td>
+                            Empleado
+                        </td>
+
+
+                        <td>
+
+                            <div class="progress-container">
+
+                                <div class="progress-bar">
+
+                                    <span
+                                        style="width: 68%"
+                                    ></span>
+
+                                </div>
+
+                                <span>
+                                    68%
+                                </span>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="status-badge active">
+                                Activo
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Ayer, 04:18 PM
+                        </td>
+
+
+                        <td>
+
+                            <button class="table-action">
+                                Ver
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- USUARIO 3 -->
+
+                    <tr>
+
+                        <td>
+
+                            <strong>
+                                Andrés Gómez
+                            </strong>
+
+                            <span class="table-secondary">
+                                andres@innovate.com
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Innovate Solutions
+                        </td>
+
+
+                        <td>
+                            Empleado
+                        </td>
+
+
+                        <td>
+
+                            <div class="progress-container">
+
+                                <div class="progress-bar">
+
+                                    <span
+                                        style="width: 91%"
+                                    ></span>
+
+                                </div>
+
+                                <span>
+                                    91%
+                                </span>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="status-badge active">
+                                Activo
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Hoy, 08:20 AM
+                        </td>
+
+
+                        <td>
+
+                            <button class="table-action">
+                                Ver
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                    <!-- USUARIO 4 -->
+
+                    <tr>
+
+                        <td>
+
+                            <strong>
+                                Diana Sánchez
+                            </strong>
+
+                            <span class="table-secondary">
+                                diana@digitalsystems.com
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            Digital Systems
+                        </td>
+
+
+                        <td>
+                            Empleado
+                        </td>
+
+
+                        <td>
+
+                            <div class="progress-container">
+
+                                <div class="progress-bar">
+
+                                    <span
+                                        style="width: 54%"
+                                    ></span>
+
+                                </div>
+
+                                <span>
+                                    54%
+                                </span>
+
+                            </div>
+
+                        </td>
+
+
+                        <td>
+
+                            <span class="status-badge inactive">
+                                Inactivo
+                            </span>
+
+                        </td>
+
+
+                        <td>
+                            12 Ago 2026
+                        </td>
+
+
+                        <td>
+
+                            <button class="table-action">
+                                Ver
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER TABLA
+        ================================================== -->
+
+        <div class="table-footer">
+
+
+            <span>
+                Mostrando 4 de 6 usuarios
+            </span>
+
+
+            <div class="pagination">
+
+
+                <button
+                    class="pagination-button"
+                    disabled
+                >
+                    ←
+                </button>
+
+
+                <button
+                    class="pagination-button active"
+                >
+                    1
+                </button>
+
+
+                <button class="pagination-button">
+                    2
+                </button>
+
+
+                <button class="pagination-button">
+                    3
+                </button>
+
+
+                <button class="pagination-button">
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
