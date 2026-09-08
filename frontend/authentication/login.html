@@ -7,105 +7,211 @@
 
     <title>Security Awareness Hub - Iniciar sesión</title>
 
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../authentication/css/login.css">
 </head>
 
 <body>
 
-    <!-- =====================================================
-         FONDO DEL LOGIN
-         ===================================================== -->
-
     <div class="login-background"></div>
-
-
-    <!-- =====================================================
-         CONTENIDO DEL LOGIN
-         ===================================================== -->
 
     <main class="login-container">
 
         <section class="login-card">
 
-            <div class="login-logo">
-                <span>SECURITY</span>
-                <strong>AWARENESS</strong>
-            </div>
+            <!-- =========================================
+                 PANEL IZQUIERDO - CARRUSEL
+            ========================================== -->
+            <section class="login-visual">
+                <section class="login-visual">
 
-            <h1>Bienvenido</h1>
+                    <div class="carousel">
 
-            <p class="login-description">
-                Inicia sesión para continuar con tu capacitación
-                en seguridad digital.
-            </p>
+                        <div class="carousel-slide slide-1"></div>
+                        <div class="carousel-slide slide-2"></div>
+                        <div class="carousel-slide slide-3"></div>
 
-            <form id="loginForm">
+                    </div>
 
-                <div class="form-group">
+                    <div class="carousel-indicators">
 
-                    <label for="email">
-                        Correo electrónico
-                    </label>
+                        <span class="indicator active"></span>
+                        <span class="indicator"></span>
+                        <span class="indicator"></span>
 
-                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+                    </div>
+
+                </section>
+            </section>
+
+
+            <!-- =========================================
+                 PANEL DERECHO - LOGIN
+            ========================================== -->
+            <section class="login-form-panel">
+
+                <div class="login-form-content">
+
+                    <div class="mobile-logo">
+                        <span>SECURITY</span>
+                        <strong>AWARENESS</strong>
+                    </div>
+
+                    <div class="login-heading">
+
+                        <span class="welcome-small">
+                            SECURITY AWARENESS HUB
+                        </span>
+
+                        <h1>
+                            Bienvenido<span>.</span>
+                        </h1>
+
+                        <p class="login-description">
+                            Inicia sesión para continuar con tu
+                            capacitación en seguridad digital.
+                        </p>
+
+                    </div>
+
+
+                    <!-- =====================================
+                         FORMULARIO
+                         IMPORTANTE:
+                         Se mantienen los IDs originales
+                    ====================================== -->
+
+                    <form id="loginForm">
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Correo electrónico
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round">
+
+                                        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                        <polyline points="3,7 12,13 21,7"></polyline>
+
+                                    </svg>
+                                </span>
+
+                                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="password">
+                                Contraseña
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                        stroke-linecap="round" stroke-linejoin="round">
+
+                                        <rect x="4" y="10" width="16" height="11" rx="2"></rect>
+                                        <path d="M8 10V7a4 4 0 0 1 8 0v3"></path>
+
+                                    </svg>
+
+                                </span>
+
+                                <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="login-options">
+
+                            <label class="remember">
+
+                                <input type="checkbox" id="remember">
+
+                                <span class="custom-checkbox"></span>
+
+                                <span>
+                                    Recordarme
+                                </span>
+
+                            </label>
+
+
+                            <a href="/frontend/authentication/forgot-password.html" class="forgot-password">
+
+                                ¿Olvidaste tu contraseña?
+
+                            </a>
+
+                        </div>
+
+
+                        <button type="submit" class="login-button">
+
+                            Iniciar sesión
+
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12,5 19,12 12,19"></polyline>
+
+                            </svg>
+
+                        </button>
+
+                    </form>
+
+
+                    <p class="register-text">
+
+                        ¿No tienes una cuenta?
+
+                        <span>
+                            Contacta al administrador.
+                        </span>
+
+                    </p>
+
+
+                    <div class="security-footer">
+
+                        <span class="security-dot"></span>
+
+                        <span>
+                            Acceso protegido
+                        </span>
+
+                    </div>
 
                 </div>
 
-
-                <div class="form-group">
-
-                    <label for="password">
-                        Contraseña
-                    </label>
-
-                    <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
-
-                </div>
-
-
-                <div class="login-options">
-
-                    <label class="remember">
-
-                        <input type="checkbox" id="remember">
-
-                        <span>Recordarme</span>
-
-                    </label>
-
-
-                    <a href="/frontend/authentication/forgot-password.html" class="forgot-password">
-                        ¿Olvidaste tu contraseña?
-                    </a>
-
-                </div>
-
-
-                <button type="submit" class="login-button">
-                    Iniciar sesión
-                </button>
-
-            </form>
-
-
-            <p class="register-text">
-
-                ¿No tienes una cuenta?
-
-                <span>
-                    Contacta al administrador.
-                </span>
-
-            </p>
+            </section>
 
         </section>
 
     </main>
 
 
-    <!-- JAVASCRIPT -->
+    <!--
+        IMPORTANTE:
+        Se mantiene el archivo JS original.
+    -->
 
-    <script src="js/login.js"></script>
+    <script src="../js/login.js"></script>
 
 </body>
 

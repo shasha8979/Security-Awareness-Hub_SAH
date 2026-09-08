@@ -457,3 +457,46 @@ if (loginForm) {
     );
 
 }
+
+/* =====================================================
+   CARRUSEL DEL LOGIN
+   Solo controla la parte visual.
+   NO interviene en la autenticación.
+===================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const indicators = document.querySelectorAll(".indicator");
+
+    if (!indicators.length) {
+        return;
+    }
+
+    let currentSlide = 0;
+
+    function updateIndicators() {
+
+        indicators.forEach((indicator, index) => {
+
+            indicator.classList.toggle(
+                "active",
+                index === currentSlide
+            );
+
+        });
+
+    }
+
+    setInterval(() => {
+
+        currentSlide++;
+
+        if (currentSlide >= indicators.length) {
+            currentSlide = 0;
+        }
+
+        updateIndicators();
+
+    }, 5000);
+
+});
