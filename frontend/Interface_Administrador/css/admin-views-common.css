@@ -1,0 +1,185 @@
+/* Shared visual language for administrator views. */
+
+:root {
+    --admin-view-max: 1200px;
+    --admin-view-text: #f1f6f3;
+    --admin-view-muted: #9eada5;
+    --admin-view-accent: #43e58a;
+    --admin-view-border: rgba(67, 229, 138, .16);
+    --admin-view-surface: rgba(7, 16, 13, .9);
+}
+
+.admin-view,
+.courses-panel,
+.companies-panel,
+.users-panel {
+    width: min(var(--admin-view-max), 100%);
+    max-width: var(--admin-view-max);
+    margin: 0 auto;
+    padding: 0;
+    color: var(--admin-view-text);
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+}
+
+.dashboard-heading {
+    max-width: none;
+    margin: 0 0 30px;
+    gap: 28px;
+}
+
+.dashboard-heading h2 {
+    margin: 0 0 10px;
+    color: var(--admin-view-text);
+    font-size: clamp(30px, 3.2vw, 40px);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -.8px;
+}
+
+.dashboard-heading p {
+    max-width: 680px;
+    margin: 0;
+    color: var(--admin-view-muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.section-label {
+    margin-bottom: 10px;
+    color: var(--admin-view-accent);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.dashboard-cards {
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.dashboard-cards .dashboard-card,
+.dashboard-card {
+    min-height: 104px;
+    padding: 18px;
+    border-color: var(--admin-view-border);
+    border-radius: 14px;
+    background: var(--admin-view-surface);
+}
+
+.dashboard-card span {
+    font-size: 10px;
+    letter-spacing: 1.2px;
+}
+
+.dashboard-card strong {
+    font-size: 24px;
+}
+
+.dashboard-card small {
+    font-size: 11px;
+}
+
+.admin-button,
+.admin-primary-button,
+.admin-secondary-button,
+.modal-button {
+    min-height: 42px;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.users-toolbar {
+    gap: 12px;
+    max-width: none;
+    margin: 0 0 20px;
+}
+
+.search-box input,
+.users-filter,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.users-table-card {
+    border: 1px solid var(--admin-view-border);
+    border-radius: 15px;
+    background: var(--admin-view-surface);
+    overflow: hidden;
+}
+
+.card-header {
+    min-height: 68px;
+    padding: 18px 22px;
+}
+
+.card-header h3 {
+    font-size: 16px;
+}
+
+.card-period {
+    font-size: 11px;
+}
+
+.users-table th {
+    height: 48px;
+    font-size: 10px;
+    letter-spacing: 1.1px;
+}
+
+.users-table td {
+    height: 68px;
+    font-size: 13px;
+}
+
+.users-table td strong {
+    font-size: 13px;
+}
+
+.table-footer {
+    min-height: 64px;
+    padding: 14px 22px;
+}
+
+.pagination-button {
+    min-width: 34px;
+    min-height: 34px;
+    font-size: 12px;
+}
+
+.user-modal-content {
+    border-radius: 16px;
+}
+
+.user-modal-header h3,
+.modal-header h3 {
+    font-size: 20px;
+}
+
+.form-group label {
+    font-size: 12px;
+}
+
+@media (max-width: 760px) {
+    .dashboard-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .dashboard-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-heading h2 {
+        font-size: 30px;
+    }
+}
